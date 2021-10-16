@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>History of Western Arts</title>
+    <meta name="description" content="Era timeline of western arts and its greatest influencers and contributors"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet"/>
+    <!-- Foundation CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" 
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous"/>
+    <!-- jsdilvr CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/css/horizontal_timeline.2.0.min.css">
+    <!-- Internal Stylesheet -->
+    <link rel="reset stylesheet" href="./Assets/css/reset.css" />
+    <link rel="theme stylesheet" href="./Assets/css/theme.css">
+    <link rel="stylesheet" href="./Assets/css/era.css" />
+  </head>
+  <body>
+    <header>
+       <!-- Nav bar -->
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <ul class="dropdown menu">
+            <li class="menu-text nav-title">ArtHouse</li>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="eras.html">Eras</a>
+            </li>
+            <li>
+              <a href="favourites.html">Favourites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <h1 class="text-center">History of Western Arts</h1>
+    <br /><br />
+    <section class="timeline">
+        <div class="horizontal-timeline" id="era-timeline-container">
+            <div class="events-content">
+                <ol id="orderedList">
+                     <li class="selected" data-horizontal-timeline='{"date": "01/01/0300", "customDisplay": "Prehistoric Art"}'>
+                        <h4>Prehistoric Art</h4>
+                        <p class="date"> ~40,000 - 40,000 B.C.</p>
+                        <br>
+                        <div class="content">
+                            <p>
+Prehistoric art includes a broad range of art made by illiterate cultures, including some of the earliest human artifacts. The best-known Prehistoric artworks are the large Paleolithic cave paintings that depict animals in continental Europe, particularly the ones at Lascaux in the Dordogne region of France. Several hundread decorated caves are known, spanning the Upper Paleolithic period (c. 38,000-12,000 BC). There are examples in Ukraine, Italy and Great Britain, but most of them are in France and Spain. Many theories have been suggested about the art's purpose, the most accepted being that it was part of religious rituals, possibly to evoke hunting success. 
+
+Besides cave painting, in various parts of the world, especially in Europe, small prehistoric statuettes known as Venus figurines with exaggerated breasts and bellies were made, the famous one being Venus of Willendorf, found in Austria. Most have small heads, wide hips, and legs that taper to a point. Arms and feet are often absent, and the head is usually small and faceless. <a href="https://en.wikipedia.org/wiki/Prehistoric_art" target="_blank">Read more...</a>
+                            </p>
+                            <img src="./Assets/images/Eras/Prehistoric.jpeg" alt="Detail in the Hall of the Bulls, 18,000-15,000 BC" width="300">
+                        </div>
+                    </li>
+                    <!-- Remaining eras are dynamically created in JS -->
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Add JS via jsdilvr CDN -->
+    <script src="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/JavaScript/horizontal_timeline.2.0.min.js"></script>
+    <!-- Internal JS -->
+    <script src="Assets/js/eras.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+/* ----------  Theme ----------  */
+:root {
+    --background-colour: #F4F3EE;
+    --text-colour: #433C38;
+    --highlight-colour: #DCA493;
+    --highlight-colour2: #968D88;
+}
+
+::selection {
+    background-color: var(--highlight-colour);
+    color: var(--background-colour);
+}
+
+/* ----- Element Selectors, adjusting page stylings after reset.css is applied ----- */
+html {
+    font-size: 63%;
+}
+
+body {
+    font-family: 'Lato','SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--text-colour);
+    background-color: var(--background-colour);
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.65rem;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue','SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    color:  var(--highlight-colour)
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Bebas Neue','SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial', sans-serif;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.artist-desc{
+    font-family: 'Roboto';
+}
+
+.desc{
+    font-family: 'Roboto';
+}
+
+p {
+    font-size: 1.5rem;
+    white-space:pre-wrap;
+    padding-right: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--highlight-colour);
+    font-weight: bolder;
+}
+
+a:hover {
+    color: var(--highlight-colour2);
+}
+
+/* ---------- Class selectors ---------- */
+.top-bar,
+.top-bar-left,
+.dropdown,
+.menu {
+    background-color: var(--background-colour);
+}

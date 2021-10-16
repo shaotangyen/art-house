@@ -1,0 +1,14 @@
+/* ---------- Class selectors ---------- */
+.result-item{
+    position: relative;
+}
+
+.fav-btn{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
+.p-3 {
+    padding:15px;
+}

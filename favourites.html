@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>History of Western Arts</title>
+  <meta name="description" content="List of favourite artworks selected by user, save by searching an artist and pressing favourite button on an artwork"/>  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet" />
+  <!-- Foundation CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous" />
+  <!-- font awezome for fav icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Internal Stylesheet -->
+  <link rel="reset stylesheet" href="./Assets/css/reset.css" />
+  <link rel="theme stylesheet" href="./Assets/css/theme.css">
+  <link rel="stylesheet" href="./Assets/css/favourites.css" />
+</head>
+
+<body>
+  <header>
+    <!-- Nav bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu">
+          <li class="menu-text nav-title">ArtHouse</li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="eras.html">Eras</a>
+          </li>
+          <li>
+            <a href="favourites.html">Favourites</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <h1 class="text-center">Your favourite Artwork</h1>
+  <br><br>
+
+  <section class="display-result grid-container">
+    <h2 class="no-fav-yet text-center"></h2>
+    <!-- Fav artwork display here -->
+    <div id="fav-artwork-list" class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3"></div>
+  </section>
+
+  <!-- jQuery CDN-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Internal Timeline JS -->
+  <script src="./Assets/js/favourites.js"></script>
+</body>
+
+</html>

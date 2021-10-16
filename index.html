@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="ArtHouse features a search engine to find any artist's body of work along with their biography from ARTIC and Wiki API archives, save your favourite artworks into favourites tab to create a gallery" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtHouse</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Roboto&display=swap" rel="stylesheet" />
+  <!-- Foundation CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous" />
+  <!-- font awesome for fav icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Internal Stylesheet -->
+  <link rel="reset stylesheet" href="./Assets/css/reset.css" />
+  <link rel="theme stylesheet" href="./Assets/css/theme.css">
+  <link rel="reset stylesheet" href="Assets/css/favourites.css" />
+  <link rel="reset stylesheet" href="Assets/css/modal.css" />
+  <link rel="stylesheet" href="Assets/css/homepage.css">
+
+</head>
+
+<body class="background-image">
+
+    <header>
+       <!-- Nav bar -->
+       <div class="top-bar">
+        <div class="top-bar-left">
+          <ul class="dropdown menu">
+            <li class="menu-text nav-title">ArtHouse</li>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="eras.html">Eras</a>
+            </li>
+            <li>
+              <a href="favourites.html">Favourites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </header>
+      <section class="artist-section grid-y grid-padding-y align-center-middle vh-70">
+        <h1 class="artist-section-title text-center font-size-80">ArtHouse</h1>
+        <h4 class="text-center">Search an artist</h4>
+        <form class="element-center" id="search-form">
+          <label>
+            <input class="search-field" type="text" placeholder="Artist name.." id="artist-name">
+            <button class="search-button button large medium-expanded" id="search-button">Search</button>
+          </label>
+        </form>
+    </section>
+
+
+  <!-- Search result display here -->
+  <section id="artist-bio" class="grid-container">
+    <!-- Bio display here -->
+    <h4 id="result-artist-title" class="text-center p-4 font-size-50"></h4>
+    <p id="result-artist-bio" class="desc"></p>
+    <div id="read-more" class="text-center"></div>
+  </section>
+
+  <section class="display-result grid-container">
+    <!-- Artwork display here -->
+    <div id="result-artwork-list" class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3"></div>
+  </section>
+
+  <!-- The Modal -->
+  <div id="message-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+    </div>
+  </div>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Internal JS -->
+  <script src="Assets/js/modal.js"></script>
+  <script src="Assets/js/homepage.js"></script>
+
+</body>
+
+</html>

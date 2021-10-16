@@ -1,0 +1,164 @@
+/* ----------  Element Selectors ---------- */
+input {
+    outline-color: var(--highlight-colour);
+    border-color: var(--highlight-colour2);
+}
+
+/* ----------  Class Selectors ----------  */
+.element-center {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    text-align:center;
+    font-size: 8rem;
+    margin-bottom: 0.5vh;
+    margin-top: 0.6vh;
+    
+}
+
+.search-field {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 31vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 3em;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+}
+
+.search-field-narrow {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 14vw;
+    height: 1.5vh;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.search-button-narrow {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 15.5vw;
+    height: 3.3vh;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.hidden-div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32.5vh;
+}
+
+.p-3 {
+    padding:15px;
+}
+
+.p-4 {
+    padding:25px;
+}
+
+.artist-section h2 {
+    margin: .5em;
+}
+
+.vh-70 {
+    height: 70vh;
+}
+
+.font-size-50{
+    font-size: 50px;
+}
+
+.font-size-80{
+    font-size: 80px;
+}
+
+#read-more {
+    padding-bottom:25px;
+}
+
+#read-more-button {
+    font-weight: bold;
+}
+
+#read-more-button:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+/* ----------  ID Selectors ----------  */
+#search-button {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 31vw;
+    height: 5vh;
+    text-align: center;
+    font-size:2.5em;
+    background-color: var(--highlight-colour)   
+}
+
+/* ----------  Media Queiries ----------  */
+@media (max-width:480px) {
+    .artist-section h2 {
+        font-size: 1.2em;
+        margin: .5em;
+    }
+
+    .search-field, #search-button {
+        font-size: 1.5rem;
+    }
+
+    body {
+        padding:0;
+    }
+
+    .menu-text {
+        font-size: 1.5rem;
+        padding:0.7rem 0.9rem !important;
+    }
+
+    .menu-text a {
+        padding:0 !important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+    .artist-section h2 {
+        font-size: 1.2em;
+        margin: .5em;
+    }
+
+    .search-field, #search-button {
+        font-size: 1.5rem;
+    }
+
+    body {
+        padding:0;
+    }
+
+    .menu-text {
+        font-size: 1.5rem;
+        padding:0.7rem 0.9rem !important;
+    }
+
+    .menu-text a {
+        padding:0 !important;
+    }
+}

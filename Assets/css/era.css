@@ -1,0 +1,145 @@
+
+:root {
+    --background-colour: #F4F3EE;
+    --text-colour: #433C38;
+    --highlight-colour: #DCA493;
+    --highlight-colour2: #968D88;
+}
+
+/* need to figure out selection colours */
+
+/* ----- Element Selectors, adjusting page stylings after reset.css is applied ----- */
+html {
+    font-size: 63%;
+}
+
+body {
+    font-family: 'Lato','SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--text-colour);
+    background-color: var(--background-colour);
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.65rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue','SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial', sans-serif;
+    margin-top: 10px;
+    color:  var(--highlight-colour)
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Bebas Neue','SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial', sans-serif;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    white-space:pre-wrap;
+    padding-right: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--highlight-colour);
+    font-weight: bolder;
+}
+
+a:hover {
+    color: var(--highlight-colour2);
+}
+
+img {
+    height: max-content !important;
+}
+
+/* ---------- Class selectors ---------- */
+.date {
+    text-align: center;
+    color: var(--highlight-colour);
+    padding: 0%;
+}
+
+.content {
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ---------- Overriding jsdilvr CSS for timeline ---------- */
+.timeline-navigation a {
+	display: inline;
+    	text-decoration: none;
+    	color: var(--highlight-colour2);
+}
+
+.timeline-navigation a:hover {
+	color: var(--highlight-colour);
+	border-color: var(--highlight-colour);
+}
+
+.horizontal-timeline .events-content .progressBar, 
+.horizontal-timeline .filling-line,
+.horizontal-timeline .events a.selected::after, 
+.horizontal-timeline .events a.older-event::after {
+	background-color: var(--highlight-colour);
+}
+
+
+.horizontal-timeline .events a {
+    color: var(--text-colour);
+    width: 100px;
+    
+}
+
+.horizontal-timeline .events,
+.horizontal-timeline .events a::after {
+    background: var(--highlight-colour2);
+}
+
+.horizontal-timeline .events-content li[data-horizontal-timeline] {
+    background: rgba(150, 141, 136, 10%);
+    text-align: start;
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) {
+  .content {
+      display:block;
+  }
+}
+
+@media (max-width:768px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+}
